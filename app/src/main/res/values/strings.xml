@@ -1,0 +1,59 @@
+<resources>
+    <!-- App Info -->
+    <string name="app_name">uniLocal</string>
+
+    <!-- Login Screen -->
+    <string name="login_title">Access your space</string>
+    <string name="usuario_hint">Enter your username</string>
+    <string name="clave_hint">Enter your password</string>
+    <string name="forgot_password">Forgot your access key?</string>
+    <string name="login_button">Sign In</string>
+
+    <!-- Registration Screen -->
+    <string name="register_prompt">Don’t have an account? Sign up today</string>
+    <string name="register_title">Create a New Profile</string>
+    <string name="nombre_hint">Your full name</string>
+    <string name="username_hint">Choose a nickname</string>
+    <string name="email_hint">Your email address</string>
+    <string name="ciudad_hint">City of residence</string>
+    <string name="password_hint">Create a password</string>
+    <string name="confirm_password_hint">Confirm your password</string>
+    <string name="register_button">Register</string>
+    <string name="passwords_no_match">Passwords don’t match</string>
+    <string name="all_fields_required">All fields are required</string>
+
+    <!-- Create Event Screen -->
+    <string name="crear_lugar_titulo">Create a New Event</string>
+    <string name="selecciona_categoria">Select a category</string>
+    <string name="crea_nuevo_hogar">Start building your event</string>
+    <string name="nombre_lugar">Event title</string>
+    <string name="descripcion_lugar">Event description</string>
+    <string name="horario_atencion">Schedule</string>
+    <string name="telefono_lugar">Contact number</string>
+    <string name="direccion_lugar">Event location</string>
+    <string name="marca_direccion">Mark this event on the map</string>
+    <string name="selecciona_foto">Choose a highlight photo</string>
+    <string name="boton_guardar">Save Event</string>
+
+    <!-- Categories -->
+    <string name="categoria_restaurante">Concert</string>
+    <string name="categoria_cafe">Meetup</string>
+    <string name="categoria_hotel">Workshop</string>
+    <string name="categoria_museo">Exhibition</string>
+    <string name="categoria_comida_rapida">Festival</string>
+    <string name="categoria_pasada">Other</string>
+
+    <!-- Navigation Bar -->
+    <string name="inicio">Home</string>
+    <string name="recomendados">Highlights</string>
+    <string name="perfil">Profile</string>
+    <string name="crear_lugar">New Event</string>
+    <string name="busqueda">Explore</string>
+
+    <!-- Edit Profile Screen -->
+    <string name="editar_perfil_titulo">Edit Your Profile</string>
+    <string name="nombre_usuario">Profile name</string>
+    <string name="email_usuario">Email</string>
+    <string name="ciudad_usuario">City</string>
+    <string name="boton_editar_datos_usuario">Save Changes</string>
+</resources>
