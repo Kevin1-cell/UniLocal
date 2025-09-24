@@ -17,7 +17,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.unilocal.R
-import com.example.unilocal.ui.components.CampoTexto
+import com.example.unilocal.ui.components.CustomTextField
 import com.example.unilocal.ui.components.BotonPrincipal
 import com.example.unilocal.ui.theme.PrimaryBlue
 
@@ -53,33 +53,34 @@ fun PantallaLogin(
         ) {
             Spacer(modifier = Modifier.height(260.dp))
 
-            Text(stringResource(R.string.login_title))
+            Text(
+                text = stringResource(R.string.login_title),
+                fontSize = 20.sp,
+                color = PrimaryBlue
+            )
 
             Spacer(modifier = Modifier.height(32.dp))
 
-            // Campo usuario
-            CampoTexto(
-                valor = usuario,
-                cuandoCambia = { usuario = it },
-                etiqueta = stringResource(R.string.usuario_hint),
-                modificador = Modifier.fillMaxWidth()
+            // Campo usuario con nuevo estilo
+            CustomTextField(
+                value = usuario,
+                onValueChange = { usuario = it },
+                label = stringResource(R.string.usuario_hint)
             )
 
             Spacer(modifier = Modifier.height(16.dp))
 
-            // Campo contraseña
-            CampoTexto(
-                valor = clave,
-                cuandoCambia = { clave = it },
-                etiqueta = stringResource(R.string.clave_hint),
-                modificador = Modifier.fillMaxWidth(),
-                transformacion = PasswordVisualTransformation(),
-                opcionesTeclado = KeyboardOptions.Default.copy()
+            // Campo contraseña con nuevo estilo
+            CustomTextField(
+                value = clave,
+                onValueChange = { clave = it },
+                label = stringResource(R.string.clave_hint),
+                visualTransformation = PasswordVisualTransformation(),
+                keyboardOptions = KeyboardOptions.Default.copy()
             )
 
             Spacer(modifier = Modifier.height(30.dp))
 
-            // Recuperar contraseña
             Text(
                 text = stringResource(R.string.forgot_password),
                 fontSize = 14.sp,
@@ -89,7 +90,6 @@ fun PantallaLogin(
 
             Spacer(modifier = Modifier.height(24.dp))
 
-            // Botón entrar
             BotonPrincipal(
                 texto = stringResource(R.string.login_button),
                 onClick = {
@@ -107,7 +107,6 @@ fun PantallaLogin(
 
             Spacer(modifier = Modifier.height(24.dp))
 
-            // Registrarse
             Text(
                 text = stringResource(R.string.register_prompt),
                 fontSize = 14.sp,

@@ -6,7 +6,7 @@ import androidx.compose.runtime.Composable
 @Composable
 fun Inicio(){
     Text(
-        text = "Inicio"
+        text = "HOME, Welcome homeeee"
 
     )
 }

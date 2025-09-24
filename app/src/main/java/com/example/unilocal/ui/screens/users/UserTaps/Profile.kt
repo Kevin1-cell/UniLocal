@@ -6,7 +6,7 @@ import androidx.compose.runtime.Composable
 @Composable
 fun Perfil(){
     Text(
-        text = "Perfil"
+        text = "Profile"
 
     )
 }

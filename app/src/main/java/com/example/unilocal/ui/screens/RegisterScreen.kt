@@ -16,7 +16,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.unilocal.R
 import com.example.unilocal.ui.components.BotonPrincipal
-import com.example.unilocal.ui.components.CampoTexto
+import com.example.unilocal.ui.components.CustomTextField
 
 @Composable
 fun PantallaRegistro() {
@@ -58,41 +58,41 @@ fun PantallaRegistro() {
 
             Spacer(modifier = Modifier.height(28.dp))
 
-            CampoTexto(
-                valor = nombre,
-                cuandoCambia = { nombre = it },
-                etiqueta = stringResource(R.string.nombre_hint)
+            CustomTextField(
+                value = nombre,
+                onValueChange = { nombre = it },
+                label = stringResource(R.string.nombre_hint)
             )
             Spacer(modifier = Modifier.height(16.dp))
 
-            CampoTexto(
-                valor = username,
-                cuandoCambia = { username = it },
-                etiqueta = stringResource(R.string.username_hint)
+            CustomTextField(
+                value = username,
+                onValueChange = { username = it },
+                label = stringResource(R.string.username_hint)
             )
             Spacer(modifier = Modifier.height(16.dp))
 
-            CampoTexto(
-                valor = email,
-                cuandoCambia = { email = it },
-                etiqueta = stringResource(R.string.email_hint),
-                opcionesTeclado = KeyboardOptions(keyboardType = KeyboardType.Email)
+            CustomTextField(
+                value = email,
+                onValueChange = { email = it },
+                label = stringResource(R.string.email_hint),
+                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Email)
             )
             Spacer(modifier = Modifier.height(16.dp))
 
-            CampoTexto(
-                valor = ciudad,
-                cuandoCambia = { ciudad = it },
-                etiqueta = stringResource(R.string.ciudad_hint)
+            CustomTextField(
+                value = ciudad,
+                onValueChange = { ciudad = it },
+                label = stringResource(R.string.ciudad_hint)
             )
             Spacer(modifier = Modifier.height(16.dp))
 
-            CampoTexto(
-                valor = password,
-                cuandoCambia = { password = it },
-                etiqueta = stringResource(R.string.password_hint),
-                transformacion = PasswordVisualTransformation(),
-                opcionesTeclado = KeyboardOptions(keyboardType = KeyboardType.Password)
+            CustomTextField(
+                value = password,
+                onValueChange = { password = it },
+                label = stringResource(R.string.password_hint),
+                visualTransformation = PasswordVisualTransformation(),
+                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password)
             )
             Spacer(modifier = Modifier.height(24.dp))
 
